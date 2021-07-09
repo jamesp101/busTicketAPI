@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nnews",
+  "info": {
+    "name": "theNews",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

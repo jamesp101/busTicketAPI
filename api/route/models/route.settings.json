@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routes",
+  "info": {
+    "name": "route",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "float"
+    },
+    "aircon": {
+      "type": "boolean",
+      "default": false
+    },
+    "from": {
+      "model": "locations"
+    },
+    "to": {
+      "model": "locations"
+    }
+  }
+}

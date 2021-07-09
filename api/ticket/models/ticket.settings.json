@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "Ticket",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "route": {
+      "model": "route"
+    },
+    "status": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "confirmedBy": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
